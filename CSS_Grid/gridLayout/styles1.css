@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    display: grid;
+    background-color: goldenrod;
+    border: 1px solid black;
+    height: 500px;
+    /* width: 100%; */
+    gap: 10px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 30px 1fr 1fr 30px;
+}
+.box{
+   background-color: aqua;
+   border: 1px solid black;
+}
+#bx1 , #bx4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#bx3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#bx2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
